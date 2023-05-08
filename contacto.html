@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>LibConstruct</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/IMG_4954.jpg" alt="Logo de la empresa"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+				<li><a href="#">Ventas</a></li>
+				<li><a href="#">Recursos</a></li>
+                <li><a href="#">Obras Realizadas</a></li>
+                <li><a href="#">¿Quiénes Somos?</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="btn-menu">
+            <span class="btn-icon"></span>
+        </button>
+    </header>
+    <!-- FIN HEADER -->
+	<section class="form-container">
+		<h1>Contacto</h1>
+        <form class="form" action="#" method="POST">
+          <label class="form-label" for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" pattern="\w{3,20}" required ><br><br>
+        
+          <label class="form-label">Tipo de contacto:</label>
+          <select class="content-select" name="tipo" id="tipo">
+            <option value=""> - Selecciona una opción - </option>
+            <option name="empresa" value="1">Empresa</option>
+            <option name="persona" value="2">Persona</option>
+          </select>
+ 
+          <label class="form-label" for="telefono">Teléfono:</label>
+          <input type="telefono" id="telefono" name="telefono" pattern="\w{12,12}" required><br><br>
+        
+          <label class="form-label" for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required><br><br>
+        
+          <label class="form-label" for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+        
+          <button type="submit" class="bt-enviar" onclick="return validateEmail()">Enviar</button>
+        </form>
+    </section>
+     <!-- FOOTER -->
+    <footer class="footer">
+        <!-- Iconos apps -->
+        <div class="redes-sociales contact-info1">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a> <br>
+          @LibConstruct<br>
+        </div>
+        <!-- Contenido del footer -->
+        <div class="contact-info2">
+            TELÉFONO DE CONTACTO: <br>
+            Teléfono de línea: (0220)-4978867<br>
+            Celular: (011) 76888890
+        </div>
+    </footer>
+    <!-- FINALIZA FOOTER -->
+    
+    <script src="js/contacto.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

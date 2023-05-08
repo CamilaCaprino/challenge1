@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>LibConstruct</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/IMG_4954.jpg" alt="Logo de la empresa"></a>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+				<li><a href="#">Ventas</a></li>
+				<li><a href="#">Recursos</a></li>
+                <li><a href="#">Obras Realizadas</a></li>
+                <li><a href="#">¿Quiénes Somos?</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="btn-menu">
+            <span class="btn-icon"></span>
+        </button>
+    </header>
+    <!-- FIN HEADER -->
 
-<script src="js/funciones.js"></script>
+    <!-- CARRUSEL -->
+	<section class="carousel">
+		<div class="carousel-slides">
+		  <img src="img/carrusel1.jpg" alt="Imagen 1">
+		  <img src="img/carrusel2.jpg" alt="Imagen 2">
+		  <img src="img/carrusel3.jpg" alt="Imagen 3">
+		</div>
+		<div class="carousel-buttons">
+		  <button class="carousel-button prev" > < </button>
+		  <button class="carousel-button next"> > </button>
+		</div>	  
+	</section>
+    <!-- FIN CARRUSEL -->
+
+    <!-- UBICACIÓN -->
+	<section class="ubi">
+        <h1 class="title">¿Dónde nos encontramos?</h1>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.562198920427!2d-58.69074732505365!3d-34.69099737292307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0f68e54f331%3A0x55e386da627f68b0!2sZapiola%201420%2C%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1682208310895!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+        </div>
+        <div class="info">
+            <h2 class="info-title-h2">Nos ubicamos en la Provincia de Buenos Aires </h3>
+
+            <h3 class="info-title"> Dirección: </h3>
+            <p class="info-p">Zapiola 1420, Libertad, Provincia de Buenos Aires</p>
+                
+            <h3 class="info-title">Teléfonos de Contacto:</h3>
+            <p class="info-p">de línea: (0220)-4978867 </p>
+            <p class="info-p">celular: (011) 76888890  </p>
+		</div>
+	</section>
+    <!-- FINALIZA UBICACIÓN -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <!-- Iconos apps -->
+        <div class="redes-sociales contact-info1">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a> <br>
+          @LibConstruct<br>
+        </div>
+        <!-- Contenido del footer -->
+        <div class="contact-info2">
+            TELÉFONO DE CONTACTO: <br>
+            Teléfono de línea: (0220)-4978867<br>
+            Celular: (011) 76888890
+        </div>
+    </footer>
+    <!-- FINALIZA FOOTER -->
+    
+    <script src="js/carrusel.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
