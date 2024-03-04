@@ -265,12 +265,12 @@ textarea {
 }
 
 /* Si se cumple la validación marca en verde 
-valid permite aplicar un estilo específico a los elementos válidos*/
+valid permite aplicar un estilo específico a los elementos válidos
 
 input:valid {
   background-color: rgb(138, 253, 138);
 }
-
+*/
 
 .content-select {
   display: inline-block;
